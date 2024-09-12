@@ -8,7 +8,8 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({
     extended:true
 }))
-mongoose.connect('mongodb://localhost:27017/MoneyList')
+mongoose.connect('mongodb+srv://ershripadkulkarni:shripad123@cluster0.c9tb4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+
 
 var db=mongoose.connection
 db.on('error',()=>{
